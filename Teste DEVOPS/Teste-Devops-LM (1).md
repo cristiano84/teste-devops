@@ -12,16 +12,22 @@ A estrutura de arquivos da aplicação deverá ser algo próximo à esta abaixo:
 Após criar a imagem, configure um minikube (https://minikube.sigs.k8s.io/docs/) e faça o deploy deste no kubernetes.
 
 Crie um Git Publico com o código usado e um repositório também público para a imagem, de forma que consigamos validar a atividade.
-
+https://github.com/cristiano84/teste-devops
+https://hub.docker.com/repository/docker/cris84/teste-devops/general
 Evidêncie executando em linha de comando:
 
 - Rode com o curl e exiba o resultado
+![alt text](image.png)
 - Como foi executado o build da imagem
+  Dentro do diretorio raiz do Dockerfile, utilizando os comandos:"docker build -t <nome da imagem> ." e o comando para iniciar "docker run -it <nome da imagem>"
 - Como validar que a imagem funcionou no Docker
+  Podemos validar os logs, acessar o container ou realizar uma requisição
 - Como fez o deploy no Kubernetes
+  Configurado o minikube para realizar o processo, utilizando o deployment generico do minikube para realizar o deploy
 - Como obter que os recursos da aplicação no kubernetes foram aplicados
+  Podemos utilizar o comando "kubectl get deployments", onde será mostrado os dados da execução.
 - Como obter os recursos de CPU e memória dos Pods e do Node
-
+ Utilizar o comando "kubectl top pods" e "kubectl top nodes"
 
 Questões
 
