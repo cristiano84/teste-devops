@@ -17,7 +17,8 @@ https://hub.docker.com/repository/docker/cris84/teste-devops/general
 Evidêncie executando em linha de comando:
 
 - Rode com o curl e exiba o resultado
-![alt text](image.png)
+Foi apresentado a construção do arquivo index.html como o texto hello world
+![image](https://github.com/cristiano84/teste-devops/assets/43679779/da4b873c-47fc-45ff-8eb0-3ca163fd1255)
 - Como foi executado o build da imagem
   Dentro do diretorio raiz do Dockerfile, utilizando os comandos:"docker build -t <nome da imagem> ." e o comando para iniciar "docker run -it <nome da imagem>"
 - Como validar que a imagem funcionou no Docker
